@@ -1,39 +1,38 @@
+## index.html
+
+```html
 <!doctype html>
 <html lang="en-AU">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>[NAME] — Capture. Triage. What next.</title>
-  <meta
-    name="description"
-    content="[NAME] helps you capture messy thoughts, screenshots, voice notes and shared content, then turn them into clearer next actions."
-  />
+  <title>Cuehold — Capture. Triage. Next.</title>
+  <meta name="description" content="Cuehold helps you capture messy thoughts, screenshots, voice notes and shared content, then triage them into clearer next actions." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="site-header">
-    <a class="logo" href="/">
+    <a class="logo" href="index.html">
       <span class="logo-mark">◇</span>
-      <span>[NAME]</span>
+      <span>Cuehold</span>
     </a>
 
     <nav class="nav">
-      <a href="#how-it-works">How it works</a>
-      <a href="#privacy">Privacy</a>
+      <a href="index.html">Home</a>
       <a href="beta.html">Join beta</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-copy">
+      <div>
         <p class="eyebrow">Private iPhone beta coming soon</p>
-
-        <h1>Stop collecting tasks. Start knowing what’s next.</h1>
-
+        <h1>Capture the mess. Decide what matters.</h1>
         <p class="hero-text">
-          [NAME] helps you capture messy thoughts, screenshots, voice notes and shared content,
+          Cuehold helps you capture messy thoughts, screenshots, voice notes and shared content,
           then triage them into clearer next actions.
         </p>
 
@@ -43,42 +42,103 @@
         </div>
 
         <p class="trust-note">
-          Works with Apple Reminders and Calendar. Nothing is exported without your confirmation.
+          You decide in Cuehold. Apple Reminders reminds. Apple Calendar maps time.
         </p>
       </div>
 
-      <div class="phone-card" aria-label="Product preview">
-        <div class="phone-shell">
-          <div class="phone-top"></div>
+      <div class="preview-card">
+        <div class="preview-window">
+          <p class="preview-title">Today Signal</p>
 
-          <div class="app-preview">
-            <div class="preview-label">Today Signal</div>
-
-            <div class="signal-card active">
-              <span class="dot"></span>
-              <div>
-                <strong>Reply to the quote follow-up</strong>
-                <p>Work · 15 min · high signal</p>
-              </div>
+          <div class="preview-item active">
+            <span></span>
+            <div>
+              <strong>Reply to quote follow-up</strong>
+              <p>Work · 15 min · high signal</p>
             </div>
+          </div>
 
-            <div class="signal-card">
-              <span class="dot muted"></span>
-              <div>
-                <strong>Book car service</strong>
-                <p>Admin · reminder suggested</p>
-              </div>
+          <div class="preview-item">
+            <span></span>
+            <div>
+              <strong>Book car service</strong>
+              <p>Admin · reminder suggested</p>
             </div>
+          </div>
 
-            <div class="signal-card">
-              <span class="dot muted"></span>
-              <div>
-                <strong>Screenshot saved as note</strong>
-                <p>Inbox · review later</p>
-              </div>
+          <div class="preview-item">
+            <span></span>
+            <div>
+              <strong>Screenshot saved as note</strong>
+              <p>Inbox · review later</p>
             </div>
+          </div>
 
-            <div class="capture-bar">
+          <div class="capture-bar">Capture anything… <strong>+</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <p class="eyebrow">How it works</p>
+      <h2>Capture → Triage → What Next</h2>
+
+      <div class="cards">
+        <article class="card">
+          <div class="number">01</div>
+          <h3>Capture without friction</h3>
+          <p>Save thoughts, screenshots, links, text and voice notes before they disappear.</p>
+        </article>
+
+        <article class="card">
+          <div class="number">02</div>
+          <h3>Triage into clarity</h3>
+          <p>Turn messy inputs into one useful next action instead of another forgotten pile.</p>
+        </article>
+
+        <article class="card">
+          <div class="number">03</div>
+          <h3>Stay Apple-native</h3>
+          <p>Decide in Cuehold. Send commitments to Apple Reminders. Use Apple Calendar as the time map.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="split">
+      <div>
+        <p class="eyebrow">Not another to-do list</p>
+        <h2>The thinking layer before the task.</h2>
+      </div>
+
+      <div>
+        <p>
+          Cuehold is not a Siri replacement, not a calendar app, not a reminders app,
+          and not a medical ADHD treatment.
+        </p>
+        <p>
+          It helps you capture the mess, decide what matters, and only then commit real tasks
+          to Apple Reminders or timing to Apple Calendar.
+        </p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <p class="eyebrow">Private beta</p>
+      <h2>Want to test Cuehold on iPhone?</h2>
+      <p>Join the waitlist and help shape the first useful external beta.</p>
+      <a class="button primary" href="beta.html">Join beta waitlist</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2026 Cuehold. All rights reserved.</span>
+    <div>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </div>
+  </footer>
+</body>
+</html>            <div class="capture-bar">
               <span>Capture anything…</span>
               <button>+</button>
             </div>
