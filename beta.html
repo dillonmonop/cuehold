@@ -3,63 +3,65 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Join the Beta — Cuehold</title>
-  <meta
-    name="description"
-    content="Join the private iPhone beta for Cuehold, an ADHD-first capture and triage app."
-  />
+  <title>Beta Access — Cuehold</title>
+  <meta name="description" content="Request limited beta access for Cuehold. Internal TestFlight is active; external beta access is coming soon." />
+  <meta name="theme-color" content="#0b0d12" />
+  <meta property="og:title" content="Cuehold Beta Access" />
+  <meta property="og:description" content="Internal TestFlight is active. External beta access is coming soon." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dillonmonop.github.io/cuehold/beta.html" />
+  <link rel="canonical" href="https://dillonmonop.github.io/cuehold/beta.html" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="site-header">
-    <a class="logo" href="index.html">
-      <span class="logo-mark">◇</span>
-      <span>Cuehold</span>
-    </a>
+    <a class="logo" href="index.html" aria-label="Cuehold home">Cuehold</a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
+      <a href="beta.html" aria-current="page">Beta</a>
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>
     </nav>
   </header>
 
   <main>
-    <section class="cta-section">
-      <p class="eyebrow">Private iPhone beta</p>
-      <h1>Help test what comes next.</h1>
+    <section class="page-hero">
+      <p class="eyebrow">Limited beta access</p>
+      <h1>External TestFlight is coming soon.</h1>
       <p>
-        Cuehold is an ADHD-first iPhone app for capturing messy thoughts, screenshots,
-        voice notes and shared content, then triaging them into clearer next actions.
+        Cuehold v0.4 is in internal TestFlight validation. Build 1.0 (5) has been
+        uploaded for TestFlight processing, but public App Store launch and public
+        external beta access are not live yet.
       </p>
-      <p>
-        It does not replace Apple Reminders or Apple Calendar. Cuehold helps you decide
-        what matters. Apple Reminders reminds. Apple Calendar maps time.
-      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="https://github.com/dillonmonop/cuehold/issues/new?title=Cuehold%20beta%20access%20request">Request beta access</a>
+        <a class="button secondary" href="support.html">Beta support</a>
+      </div>
     </section>
 
-    <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Beta waitlist</p>
-        <h2>Apply for the private TestFlight beta</h2>
-        <p>
-          We’re looking for iPhone users who use Apple-native workflows, capture too much,
-          and are willing to send blunt, specific feedback.
-        </p>
-      </div>
+    <section class="section compact">
+      <div class="cards two">
+        <article class="card">
+          <h3>Who it is for</h3>
+          <p>iPhone users who use Apple-native workflows and want help moving from capture to next action.</p>
+        </article>
 
-      <div class="form-card">
-        <iframe
-          data-tally-src="https://tally.so/embed/dWzORN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-          loading="lazy"
-          width="100%"
-          height="820"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          title="Cuehold Beta Waitlist">
-        </iframe>
+        <article class="card">
+          <h3>What to expect</h3>
+          <p>Limited access, rough edges, and a bias toward blunt feedback over polished marketing.</p>
+        </article>
+
+        <article class="card">
+          <h3>What it is not</h3>
+          <p>Not a public App Store launch, subscription offer, medical tool, or automated scheduler.</p>
+        </article>
+
+        <article class="card">
+          <h3>Feedback focus</h3>
+          <p>Capture reliability, triage clarity, Apple Reminders export, and whether the next action feels obvious.</p>
+        </article>
       </div>
     </section>
   </main>
@@ -71,29 +73,5 @@
       <a href="support.html">Support</a>
     </div>
   </footer>
-
-  <script>
-    var d = document;
-    var w = "https://tally.so/widgets/embed.js";
-    var v = function () {
-      if (typeof Tally !== "undefined") {
-        Tally.loadEmbeds();
-      } else {
-        d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) {
-          e.src = e.dataset.tallySrc;
-        });
-      }
-    };
-
-    if (typeof Tally !== "undefined") {
-      v();
-    } else if (d.querySelector('script[src="' + w + '"]') == null) {
-      var s = d.createElement("script");
-      s.src = w;
-      s.onload = v;
-      s.onerror = v;
-      d.body.appendChild(s);
-    }
-  </script>
 </body>
 </html>
