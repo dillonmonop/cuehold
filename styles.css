@@ -300,6 +300,44 @@ p {
   font-weight: 800;
 }
 
+.screenshot-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.screenshot-card {
+  margin: 0;
+  padding: 10px 10px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.045)),
+    rgba(0, 0, 0, 0.28);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.28);
+}
+
+.screenshot-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 28px;
+  background: #050609;
+}
+
+.screenshot-card figcaption {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 0.98rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
 .split {
   margin-top: 40px;
   padding: 40px;
@@ -393,9 +431,16 @@ p {
 
   .cards,
   .cards.two,
+  .screenshot-strip,
   .mini-grid,
   .split {
     grid-template-columns: 1fr;
+  }
+
+  .screenshot-card {
+    max-width: 340px;
+    width: 100%;
+    justify-self: center;
   }
 
   .card {
