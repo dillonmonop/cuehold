@@ -230,6 +230,68 @@ p {
   font-weight: 900;
 }
 
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.screenshot-card {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.065);
+  text-align: center;
+}
+
+.screenshot-card h3 {
+  margin: 18px 10px 8px;
+}
+
+.screenshot-card p {
+  margin: 0 10px 10px;
+  font-size: 0.95rem;
+}
+
+.screenshot-placeholder {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 9 / 19.5;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.03)),
+    rgba(0, 0, 0, 0.2);
+}
+
+.screenshot-placeholder::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  width: 34%;
+  height: 20px;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.32);
+}
+
+.screenshot-placeholder span {
+  position: relative;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
 .split {
   margin-top: 40px;
   padding: 40px;
@@ -296,8 +358,15 @@ p {
 
   .cards,
   .cards.two,
+  .screenshot-grid,
   .split {
     grid-template-columns: 1fr;
+  }
+
+  .screenshot-placeholder {
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .card {

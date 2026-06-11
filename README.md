@@ -21,6 +21,8 @@ Static GitHub Pages site for Cuehold, the public-facing iPhone app name.
 ├── beta.html
 ├── privacy.html
 ├── support.html
+├── assets/
+│   └── screenshots/
 └── styles.css
 ```
 
@@ -53,6 +55,18 @@ Cuehold helps users decide what matters. Apple Reminders reminds. Apple Calendar
 ## Development notes
 
 This is a static website. No build system, framework, tracking, payment, or signup backend is required.
+
+## Screenshot requirements
+
+No usable sanitized app screenshots are currently committed.
+
+When available, add real Cuehold app screenshots generated from the current app UI:
+
+- `assets/screenshots/capture.png` — capture screen with demo input only
+- `assets/screenshots/today-signal.png` — Today Signal / What Next screen with demo tasks only
+- `assets/screenshots/triage.png` — triage or saved item detail screen with demo content only
+
+Do not publish personal data, real reminders, real calendar events, account details, private captures, emails, phone numbers, addresses, or internal TestFlight details.
 
 Preview locally:
 
