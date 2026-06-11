@@ -28,21 +28,34 @@
 
   <main>
     <section class="hero">
-      <p class="eyebrow">v0.4 internal TestFlight active</p>
-      <h1>Capture the mess. Triage what matters. Know what to do next.</h1>
-      <p class="hero-text">
-        Cuehold is an ADHD-first execution layer for Apple users who lose tasks in
-        the gap between intention and action.
-      </p>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">v0.4 internal TestFlight active</p>
+          <h1>Capture the mess. Triage what matters. Know what to do next.</h1>
+          <p class="hero-text">
+            Cuehold is an ADHD-first execution layer for Apple users who lose tasks in
+            the gap between intention and action.
+          </p>
 
-      <div class="hero-actions">
-        <a class="button primary" href="beta.html">Request beta access</a>
-        <a class="button secondary" href="#how-it-works">See how it works</a>
+          <div class="hero-actions">
+            <a class="button primary" href="beta.html">Request beta access</a>
+            <a class="button secondary" href="#how-it-works">See how it works</a>
+          </div>
+
+          <p class="trust-note">
+            Private testing is active. External TestFlight access is coming soon.
+          </p>
+        </div>
+
+        <figure class="phone-preview" aria-label="Cuehold Today Signal product preview">
+          <img
+            src="assets/screenshots/today-signal.jpeg"
+            alt="Cuehold Today Signal screen showing capture, context, catch-up, and up next actions."
+            width="900"
+            height="1955"
+          />
+        </figure>
       </div>
-
-      <p class="trust-note">
-        Private testing is active. External TestFlight access is coming soon.
-      </p>
     </section>
 
     <section class="section" id="how-it-works">
@@ -103,11 +116,16 @@
         </article>
 
         <article class="screenshot-card">
-          <div class="screenshot-placeholder" role="img" aria-label="Sanitized Cuehold What Next screen screenshot pending">
-            <span>Screenshot pending</span>
-          </div>
+          <img
+            class="screenshot-image"
+            src="assets/screenshots/today-signal.jpeg"
+            alt="Cuehold Today Signal screen showing capture, context, catch-up, and up next actions."
+            width="900"
+            height="1955"
+            loading="lazy"
+          />
           <h3>What Next</h3>
-          <p>Needed: sanitized Today Signal screen with demo tasks.</p>
+          <p>Today Signal brings capture, context, catch-up, and up next into one view.</p>
         </article>
       </div>
     </section>
