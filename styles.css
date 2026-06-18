@@ -340,6 +340,40 @@ p {
   line-height: 1.45;
 }
 
+.feature-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 315px);
+  gap: 42px;
+  align-items: center;
+}
+
+.feature-section.reverse {
+  grid-template-columns: minmax(260px, 315px) minmax(0, 1fr);
+}
+
+.feature-section.reverse .feature-copy {
+  order: 2;
+}
+
+.feature-copy p {
+  max-width: 650px;
+  font-size: 1.08rem;
+}
+
+.feature-shot {
+  justify-self: center;
+}
+
+.feature-shot img {
+  max-height: 640px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.faq-cards .card {
+  min-height: 0;
+}
+
 .split {
   margin-top: 40px;
   padding: 40px;
@@ -435,8 +469,14 @@ p {
   .cards.two,
   .screenshot-strip,
   .mini-grid,
+  .feature-section,
+  .feature-section.reverse,
   .split {
     grid-template-columns: 1fr;
+  }
+
+  .feature-section.reverse .feature-copy {
+    order: 0;
   }
 
   .screenshot-card {
