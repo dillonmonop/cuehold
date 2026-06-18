@@ -111,6 +111,11 @@ button:focus-visible {
   min-width: 0;
 }
 
+.hero-inner-simple {
+  display: block;
+  max-width: 860px;
+}
+
 .phone-preview {
   margin: 0;
   justify-self: center;
@@ -410,26 +415,22 @@ p {
 
 .feature-stack {
   display: grid;
-  gap: 74px;
+  gap: 56px;
 }
 
 .feature-row {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 42px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+  gap: clamp(32px, 6vw, 96px);
   align-items: center;
 }
 
-.feature-row.text-only {
-  max-width: 760px;
-}
-
 .feature-row.with-shot {
-  grid-template-columns: minmax(0, 1fr) minmax(240px, 300px);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
 }
 
 .feature-row.with-shot.reverse {
-  grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
+  grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
 }
 
 .feature-row.with-shot.reverse .feature-copy {
@@ -441,7 +442,7 @@ p {
 }
 
 .feature-row h3 {
-  font-size: clamp(1.75rem, 3vw, 2.45rem);
+  font-size: clamp(1.9rem, 3.2vw, 2.65rem);
   line-height: 1.08;
 }
 
@@ -451,13 +452,13 @@ p {
 }
 
 .feature-row .feature-shot {
-  max-width: 300px;
+  max-width: 360px;
 }
 
 .feature-row .feature-shot img {
-  width: min(100%, 270px);
-  max-height: 560px;
-  object-fit: cover;
+  width: min(100%, 330px);
+  max-height: none;
+  object-fit: contain;
   object-position: top;
 }
 
@@ -628,21 +629,31 @@ p {
   }
 
   .feature-stack {
-    gap: 56px;
+    gap: 44px;
   }
 
   .feature-row.with-shot.reverse .feature-copy,
-  .feature-row.with-shot.reverse .feature-shot {
+  .feature-row.with-shot.reverse .feature-shot,
+  .feature-row.with-shot .feature-copy,
+  .feature-row.with-shot .feature-shot {
     order: 0;
   }
 
+  .feature-row.with-shot .feature-copy {
+    order: 1;
+  }
+
+  .feature-row.with-shot .feature-shot {
+    order: 2;
+  }
+
   .feature-row .feature-shot {
-    max-width: 280px;
+    max-width: 300px;
   }
 
   .feature-row .feature-shot img {
-    width: min(100%, 250px);
-    max-height: 500px;
+    width: min(100%, 270px);
+    max-height: none;
   }
 
   .trust-band {
