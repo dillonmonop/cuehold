@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Beta Waitlist - Cuehold</title>
-  <meta name="description" content="Join the limited beta waitlist for Cuehold. Internal TestFlight is active; external beta access is coming soon." />
+  <title>Beta - Cuehold</title>
+  <meta name="description" content="Join the External Private Beta Alpha for Cuehold through TestFlight." />
   <meta name="theme-color" content="#F5F1E8" />
-  <meta property="og:title" content="Cuehold Beta Waitlist" />
-  <meta property="og:description" content="Internal TestFlight is active. External beta access is coming soon." />
+  <meta property="og:title" content="Cuehold Beta" />
+  <meta property="og:description" content="Join the External Private Beta Alpha through TestFlight." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dillonmonop.github.io/cuehold/beta.html" />
   <meta property="og:image" content="https://dillonmonop.github.io/cuehold/assets/social-preview.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Cuehold Beta Waitlist" />
-  <meta name="twitter:description" content="Request access when the next beta cohort opens." />
+  <meta name="twitter:title" content="Cuehold Beta" />
+  <meta name="twitter:description" content="Join the External Private Beta Alpha through TestFlight." />
   <meta name="twitter:image" content="https://dillonmonop.github.io/cuehold/assets/social-preview.svg" />
   <link rel="canonical" href="https://dillonmonop.github.io/cuehold/beta.html" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -39,12 +39,15 @@
 
   <main id="main">
     <section class="page-hero section-shell">
-      <div class="section-kicker">Limited beta access</div>
-      <h1>External TestFlight is coming soon.</h1>
+      <div class="section-kicker">External Private Beta Alpha</div>
+      <h1>Cuehold is open on TestFlight.</h1>
       <p>
-        Cuehold is in internal TestFlight validation, but public App Store launch
-        and public external beta access are not live yet.
+        Join the Cuehold External Private Beta Alpha through TestFlight. Public
+        App Store launch is not live yet.
       </p>
+      <div class="hero-actions">
+        <a class="button primary" href="https://testflight.apple.com/join/kYupQzzj" target="_blank" rel="noopener noreferrer">Join the Beta</a>
+      </div>
     </section>
 
     <section class="section compact">
@@ -78,30 +81,20 @@
     <section class="section compact form-section" aria-labelledby="beta-form-heading">
       <div class="section-heading split-heading">
         <div>
-          <div class="section-kicker">Join waitlist</div>
-          <h2 id="beta-form-heading">Join the Cuehold beta list.</h2>
+          <div class="section-kicker">TestFlight access</div>
+          <h2 id="beta-form-heading">Install Cuehold through TestFlight.</h2>
         </div>
         <p>
-          External TestFlight is not public yet. Use this form to request access
-          when the next beta cohort opens.
+          TestFlight manages beta installation and feedback. Cuehold stays in
+          beta while capture, triage, and Apple-native handoff are refined.
         </p>
       </div>
 
-      <div class="form-card">
-        <iframe
-          data-tally-src="https://tally.so/embed/dWzORN?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-          loading="lazy"
-          width="100%"
-          height="820"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          title="Cuehold Beta Waitlist">
-        </iframe>
+      <div class="cta-panel beta-access-panel">
+        <h2>External Private Beta Alpha</h2>
+        <p>Use the TestFlight link to join the current Cuehold beta.</p>
+        <a class="button primary" href="https://testflight.apple.com/join/kYupQzzj" target="_blank" rel="noopener noreferrer">Join the Beta</a>
       </div>
-      <p class="form-fallback">
-        If the form does not load, <a href="https://tally.so/r/dWzORN">open beta waitlist form</a>.
-      </p>
     </section>
   </main>
 
@@ -116,29 +109,5 @@
       <a href="support.html">Support</a>
     </div>
   </footer>
-
-  <script>
-    var d = document;
-    var w = "https://tally.so/widgets/embed.js";
-    var v = function () {
-      if (typeof Tally !== "undefined") {
-        Tally.loadEmbeds();
-      } else {
-        d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) {
-          e.src = e.dataset.tallySrc;
-        });
-      }
-    };
-
-    if (typeof Tally !== "undefined") {
-      v();
-    } else if (d.querySelector('script[src="' + w + '"]') == null) {
-      var s = d.createElement("script");
-      s.src = w;
-      s.onload = v;
-      s.onerror = v;
-      d.body.appendChild(s);
-    }
-  </script>
 </body>
 </html>
