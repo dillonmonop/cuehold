@@ -3,20 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Beta Waitlist — Cuehold</title>
+  <title>Beta Waitlist - Cuehold</title>
   <meta name="description" content="Join the limited beta waitlist for Cuehold. Internal TestFlight is active; external beta access is coming soon." />
-  <meta name="theme-color" content="#0b0d12" />
+  <meta name="theme-color" content="#090b10" />
   <meta property="og:title" content="Cuehold Beta Waitlist" />
   <meta property="og:description" content="Internal TestFlight is active. External beta access is coming soon." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dillonmonop.github.io/cuehold/beta.html" />
+  <meta property="og:image" content="https://dillonmonop.github.io/cuehold/assets/social-preview.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cuehold Beta Waitlist" />
+  <meta name="twitter:description" content="Request access when the next beta cohort opens." />
+  <meta name="twitter:image" content="https://dillonmonop.github.io/cuehold/assets/social-preview.svg" />
   <link rel="canonical" href="https://dillonmonop.github.io/cuehold/beta.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <a class="logo" href="index.html" aria-label="Cuehold home">Cuehold</a>
+    <a class="logo" href="index.html" aria-label="Cuehold home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>Cuehold</span>
+    </a>
 
     <nav class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
@@ -26,9 +37,9 @@
     </nav>
   </header>
 
-  <main>
-    <section class="page-hero">
-      <p class="eyebrow">Limited beta access</p>
+  <main id="main">
+    <section class="page-hero section-shell">
+      <div class="section-kicker">Limited beta access</div>
       <h1>External TestFlight is coming soon.</h1>
       <p>
         Cuehold is in internal TestFlight validation, but public App Store launch
@@ -37,33 +48,39 @@
     </section>
 
     <section class="section compact">
-      <div class="cards two">
-        <article class="card">
+      <div class="bento-grid two-column">
+        <article class="bento-card">
+          <span class="card-index">01</span>
           <h3>Who it is for</h3>
           <p>iPhone users who use Apple-native workflows and want help moving from capture to next action.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card">
+          <span class="card-index">02</span>
           <h3>What to expect</h3>
           <p>Limited access, rough edges, and a bias toward blunt feedback over polished marketing.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card">
+          <span class="card-index">03</span>
           <h3>What it is not</h3>
           <p>Not a public App Store launch, subscription offer, medical tool, or automated scheduler.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card accent-card">
+          <span class="card-index">04</span>
           <h3>Feedback focus</h3>
           <p>Capture reliability, triage clarity, Apple Reminders export, and whether the next action feels obvious.</p>
         </article>
       </div>
     </section>
 
-    <section class="section compact" aria-labelledby="beta-form-heading">
-      <div class="section-heading">
-        <p class="eyebrow">Join waitlist</p>
-        <h2 id="beta-form-heading">Join the Cuehold beta list.</h2>
+    <section class="section compact form-section" aria-labelledby="beta-form-heading">
+      <div class="section-heading split-heading">
+        <div>
+          <div class="section-kicker">Join waitlist</div>
+          <h2 id="beta-form-heading">Join the Cuehold beta list.</h2>
+        </div>
         <p>
           External TestFlight is not public yet. Use this form to request access
           when the next beta cohort opens.
@@ -89,6 +106,10 @@
   </main>
 
   <footer class="site-footer">
+    <a class="logo footer-logo" href="index.html" aria-label="Cuehold home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>Cuehold</span>
+    </a>
     <span>© 2026 Cuehold. All rights reserved.</span>
     <div>
       <a href="privacy.html">Privacy</a>

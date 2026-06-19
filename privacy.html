@@ -3,20 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy — Cuehold</title>
+  <title>Privacy - Cuehold</title>
   <meta name="description" content="Plain-English privacy notes for the Cuehold website and beta app." />
-  <meta name="theme-color" content="#0b0d12" />
+  <meta name="theme-color" content="#090b10" />
   <meta property="og:title" content="Cuehold Privacy" />
   <meta property="og:description" content="Plain-English privacy notes for the Cuehold website and beta app." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dillonmonop.github.io/cuehold/privacy.html" />
+  <meta property="og:image" content="https://dillonmonop.github.io/cuehold/assets/social-preview.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cuehold Privacy" />
+  <meta name="twitter:description" content="Plain-English privacy notes for Cuehold." />
+  <meta name="twitter:image" content="https://dillonmonop.github.io/cuehold/assets/social-preview.svg" />
   <link rel="canonical" href="https://dillonmonop.github.io/cuehold/privacy.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <a class="logo" href="index.html" aria-label="Cuehold home">Cuehold</a>
+    <a class="logo" href="index.html" aria-label="Cuehold home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>Cuehold</span>
+    </a>
 
     <nav class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
@@ -26,9 +37,9 @@
     </nav>
   </header>
 
-  <main>
-    <section class="page-hero">
-      <p class="eyebrow">Privacy</p>
+  <main id="main">
+    <section class="page-hero section-shell">
+      <div class="section-kicker">Privacy</div>
       <h1>Privacy, simple not simplistic.</h1>
       <p>
         Cuehold is a productivity capture and triage app. It helps you capture
@@ -37,48 +48,48 @@
     </section>
 
     <section class="section compact">
-      <div class="cards two">
-        <article class="card">
+      <div class="bento-grid privacy-grid">
+        <article class="bento-card">
           <h3>Static website</h3>
           <p>This GitHub Pages site does not add analytics, ads, or payment tools. The beta form uses Tally.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card">
           <h3>Productivity, not medical care</h3>
           <p>Cuehold is not medical advice, diagnosis, treatment, therapy, clinical advice, or ADHD treatment.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card">
           <h3>Content you choose</h3>
           <p>Cuehold is designed around content you intentionally type, paste, speak, import, capture, or share into the app.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card">
           <h3>Content that may be processed</h3>
           <p>This may include typed captures, pasted text, voice transcript text, OCR text from screenshots, shared content text, and screenshot/image input.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card wide-card">
           <h3>OpenAI processing</h3>
           <p>If AI-assisted cleanup or routing is enabled or used, selected content may be processed by OpenAI. This may include typed text, pasted text, voice transcript text, OCR text from screenshots, shared content text, and screenshot/image input. Cuehold uses this processing to generate suggested saved items and next actions.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card">
           <h3>Why content is processed</h3>
           <p>Cuehold uses selected content to clean up messy captures, suggest next actions, generate suggested saved items, and route captures toward Reminder or Calendar review where appropriate.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card wide-card">
           <h3>Apple Calendar and Reminders</h3>
           <p>Calendar access may be used for context and user-confirmed exports. Reminders access may be used for user-confirmed exports. Cuehold does not silently create, edit, complete, delete, or move Apple Calendar events or Apple Reminders.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card">
           <h3>User control</h3>
           <p>You choose what you capture or share into Cuehold. Exports require confirmation. You can delete local Cuehold items where supported.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card">
           <h3>Beta feedback and support</h3>
           <p>Beta requests and feedback submitted through Tally are processed by Tally. Beta reports may include device details, screenshots, reproduction notes, and anything you choose to send. Contact support for privacy questions.</p>
         </article>
@@ -87,6 +98,10 @@
   </main>
 
   <footer class="site-footer">
+    <a class="logo footer-logo" href="index.html" aria-label="Cuehold home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>Cuehold</span>
+    </a>
     <span>© 2026 Cuehold. All rights reserved.</span>
     <div>
       <a href="beta.html">Beta</a>

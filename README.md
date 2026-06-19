@@ -7,7 +7,7 @@ Static GitHub Pages site for Cuehold, the public-facing iPhone app name.
 - Public name: Cuehold
 - Hosting: GitHub Pages
 - Stage: v0.4 internal TestFlight active; external beta access coming soon
-- Latest known TestFlight build status: build 1.0 (5) uploaded/processing
+- TestFlight/App Store Connect state is not inferred from this repo
 - Public App Store launch: not live
 - Paid/subscription launch: not in scope
 - App platform: iPhone
@@ -22,6 +22,8 @@ Static GitHub Pages site for Cuehold, the public-facing iPhone app name.
 ├── privacy.html
 ├── support.html
 ├── assets/
+│   ├── favicon.svg
+│   ├── social-preview.svg
 │   └── screenshots/
 └── styles.css
 ```
@@ -60,12 +62,13 @@ This is a static website. No build system, framework, tracking, payment, or sign
 
 Committed screenshot assets:
 
-- `assets/screenshots/today-signal.jpeg` — Today Signal / What Next screen captured from the real app UI
-
-Still needed:
-
-- `assets/screenshots/capture.png` — capture screen with demo input only
-- `assets/screenshots/triage.png` — triage or saved item detail screen with demo content only
+- `assets/screenshots/today-signal-build12.png`
+- `assets/screenshots/library-build12.png`
+- `assets/screenshots/build-plan-build12.png`
+- `assets/screenshots/capture-flow.png`
+- `assets/screenshots/today-signal-strip.png`
+- `assets/screenshots/triage-saved-item.png`
+- `assets/screenshots/today-signal.jpeg`
 
 Do not publish personal data, real reminders, real calendar events, account details, private captures, emails, phone numbers, addresses, or internal TestFlight details.
 

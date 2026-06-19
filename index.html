@@ -3,20 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cuehold — Capture. Sort. What Next.</title>
-  <meta name="description" content="Cuehold turns messy capture into clear next actions, with Apple Reminders and Apple Calendar handoff only after you confirm." />
-  <meta name="theme-color" content="#0b0d12" />
-  <meta property="og:title" content="Cuehold — Capture. Sort. What Next." />
-  <meta property="og:description" content="Capture the mess. Decide what matters." />
+  <title>Cuehold - Capture the thought. Know what’s next.</title>
+  <meta name="description" content="Cuehold is an ADHD-first execution layer for iPhone — turning scattered intent into ranked next action with explicit Apple Reminders and Calendar handoff." />
+  <meta name="theme-color" content="#090b10" />
+  <meta property="og:title" content="Cuehold - Capture the thought. Know what’s next." />
+  <meta property="og:description" content="Capture → Triage → What Next for Apple-native workflows." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dillonmonop.github.io/cuehold/" />
+  <meta property="og:image" content="https://dillonmonop.github.io/cuehold/assets/social-preview.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cuehold - Capture the thought. Know what’s next." />
+  <meta name="twitter:description" content="An ADHD-first execution layer for iPhone." />
+  <meta name="twitter:image" content="https://dillonmonop.github.io/cuehold/assets/social-preview.svg" />
   <link rel="canonical" href="https://dillonmonop.github.io/cuehold/" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <a class="logo" href="index.html" aria-label="Cuehold home">Cuehold</a>
+    <a class="logo" href="index.html" aria-label="Cuehold home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>Cuehold</span>
+    </a>
 
     <nav class="nav" aria-label="Primary">
       <a href="index.html" aria-current="page">Home</a>
@@ -26,139 +37,255 @@
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-inner hero-inner-simple">
-        <div class="hero-copy">
-          <p class="eyebrow">Early TestFlight beta</p>
-          <h1>Capture the mess. Decide what matters.</h1>
-          <p class="hero-text">
-            Cuehold turns screenshots, voice notes, pasted text, thoughts, and shared links into clear next actions
-            &mdash; then hands reminders to Apple Reminders and timing to Apple Calendar only when you confirm.
-          </p>
+  <main id="main">
+    <section class="hero section-shell" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <h1 id="hero-heading">Capture the thought. Know what’s next.</h1>
+        <p class="hero-text">
+          Cuehold is an ADHD-first execution layer for iPhone — turning scattered intent into ranked next action.
+        </p>
 
-          <div class="hero-actions">
-            <a class="button primary" href="beta.html">Join beta waitlist</a>
-            <a class="button secondary" href="#how-it-works">See how it works</a>
-          </div>
-
-          <p class="trust-note">External TestFlight access is being prepared.</p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button primary" href="beta.html">Join the beta</a>
+          <a class="button secondary" href="#how-it-works">See how it works</a>
         </div>
+
+        <p class="status-note">External TestFlight access is being prepared.</p>
+      </div>
+
+      <div class="hero-visual" aria-label="Cuehold product preview">
+        <div class="phone-frame hero-phone">
+          <img
+            src="assets/screenshots/today-signal-build12.png"
+            alt="Cuehold Today Signal screen showing capture actions and Up Next."
+            width="942"
+            height="2048"
+            fetchpriority="high"
+          />
+        </div>
+
+        <div class="floating-panel capture-panel" aria-hidden="true">
+          <span>Captured</span>
+          <strong>Invoice thing from yesterday</strong>
+          <small>Ready for triage</small>
+        </div>
+
+        <div class="floating-panel next-panel" aria-hidden="true">
+          <span>What Next</span>
+          <strong>Reply by 4 PM</strong>
+          <small>Ranked above passive notes</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem-section" aria-labelledby="problem-heading">
+      <div class="section-kicker">The real problem</div>
+      <div class="section-heading">
+        <h2 id="problem-heading">Your brain is not broken. Your task system is.</h2>
+        <p>
+          Cuehold is built for the moment before a task becomes a commitment, when the thought is real
+          but the destination is not obvious yet.
+        </p>
+      </div>
+
+      <div class="bento-grid problem-grid">
+        <article class="bento-card">
+          <span class="card-index">01</span>
+          <h3>Notes become graveyards.</h3>
+          <p>Fast capture is easy. Finding the thing again when it matters is the hard part.</p>
+        </article>
+
+        <article class="bento-card">
+          <span class="card-index">02</span>
+          <h3>Reminders become noise.</h3>
+          <p>Everything feels urgent when every loose thought is promoted too early.</p>
+        </article>
+
+        <article class="bento-card">
+          <span class="card-index">03</span>
+          <h3>Calendar becomes guilt.</h3>
+          <p>Time blocks lose trust when they are filled before the action is clear.</p>
+        </article>
+
+        <article class="bento-card accent-card">
+          <span class="card-index">04</span>
+          <h3>Cuehold gives the thought somewhere useful to land.</h3>
+          <p>Capture first. Triage next. Commit only when the next step deserves a real place.</p>
+        </article>
       </div>
     </section>
 
     <section class="section loop-section" id="how-it-works" aria-labelledby="loop-heading">
-      <div class="section-heading compact-heading">
-        <p class="eyebrow">Product loop</p>
-        <h2 id="loop-heading">Capture → Sort → What Next</h2>
+      <div class="section-kicker">Core loop</div>
+      <div class="loop-header">
+        <h2 id="loop-heading">Capture → Triage → What Next</h2>
         <p>
-          Cuehold sits before your commitments. Capture the messy thing, sort it into clarity,
-          then choose what happens next.
+          Cuehold sits between messy intent and Apple-native execution. It keeps capture fast,
+          judgement explicit, and resurfacing focused on what deserves attention now.
         </p>
       </div>
 
-      <div class="loop-cards">
+      <div class="loop-track" aria-label="Cuehold workflow">
         <article>
+          <span class="loop-number">1</span>
           <h3>Capture</h3>
-          <p>Save messy inputs fast.</p>
+          <p>Type, speak, paste, screenshot, or share before the thought evaporates.</p>
         </article>
 
         <article>
-          <h3>Sort</h3>
-          <p>Route into Action, Thought, or Reference.</p>
+          <span class="loop-number">2</span>
+          <h3>Triage</h3>
+          <p>Decide whether it is action, thought, reference, plan material, or nothing urgent.</p>
         </article>
 
         <article>
+          <span class="loop-number">3</span>
           <h3>What Next</h3>
-          <p>Review before Apple Reminders or Calendar.</p>
+          <p>Rank the next action and export only after review when Apple should take over.</p>
         </article>
       </div>
     </section>
 
-    <section class="section feature-stack" aria-labelledby="features-heading">
-      <div class="section-heading compact-heading">
-        <p class="eyebrow">Core features</p>
-        <h2 id="features-heading">A calmer path from capture to commitment.</h2>
+    <section class="section showcase-section" aria-labelledby="showcase-heading">
+      <div class="section-heading split-heading">
+        <div>
+          <div class="section-kicker">Product surface</div>
+          <h2 id="showcase-heading">A calm place between capture and commitment.</h2>
+        </div>
+        <p>
+          The interface is intentionally narrow: capture the input, make the call, then decide whether it
+          belongs in Cuehold, Apple Reminders, or Apple Calendar.
+        </p>
       </div>
 
-      <article class="feature-row with-shot">
-        <div class="feature-copy">
-          <p class="eyebrow">Capture</p>
-          <h3>Capture anything before it disappears.</h3>
-          <p>Save screenshots, links, text, voice notes, and loose thoughts before they disappear.</p>
-        </div>
-
-        <figure class="screenshot-card feature-shot">
+      <div class="showcase-grid">
+        <figure class="shot-card tall-shot">
           <img
             src="assets/screenshots/today-signal-build12.png"
-            alt="Cuehold Today Signal screen showing Sort This, Next Action, Think About This, Keep This, and Up Next."
+            alt="Cuehold Today Signal screen with capture actions and Up Next."
             width="942"
             height="2048"
+            loading="lazy"
           />
+          <figcaption>
+            <strong>Today Signal</strong>
+            <span>The next useful signal rises above passive captures.</span>
+          </figcaption>
         </figure>
-      </article>
 
-      <article class="feature-row with-shot reverse">
-        <div class="feature-copy">
-          <p class="eyebrow">Sort</p>
-          <h3>Sort into clarity.</h3>
-          <p>Turn captures into Actions, Thoughts, or Reference without building another heavy work system.</p>
-        </div>
-
-        <figure class="screenshot-card feature-shot">
+        <figure class="shot-card">
           <img
             src="assets/screenshots/library-build12.png"
-            alt="Cuehold Library filters showing Actions, Thoughts, Reference, and Next Action cards."
+            alt="Cuehold Library screen with filters for Actions, Thoughts, Reference, and Next Actions."
             width="942"
             height="2048"
+            loading="lazy"
           />
+          <figcaption>
+            <strong>Library</strong>
+            <span>Actions, thoughts, and reference stay distinct.</span>
+          </figcaption>
         </figure>
-      </article>
 
-      <article class="feature-row with-shot">
-        <div class="feature-copy">
-          <p class="eyebrow">Plan</p>
-          <h3>Build a Plan.</h3>
-          <p>Paste or generate a plan draft, review it inside Cuehold, then choose what gets imported or exported.</p>
-        </div>
-
-        <figure class="screenshot-card feature-shot">
+        <figure class="shot-card">
           <img
             src="assets/screenshots/build-plan-build12.png"
-            alt="Cuehold Build a Plan screen showing Generate Plan Draft, Copy Plan Prompt, and paste area."
+            alt="Cuehold Build a Plan screen with plan draft and review controls."
             width="942"
             height="2048"
+            loading="lazy"
           />
+          <figcaption>
+            <strong>Build a Plan</strong>
+            <span>Plans are reviewed before anything is imported or exported.</span>
+          </figcaption>
         </figure>
-      </article>
+      </div>
     </section>
 
-    <section class="section trust-band" aria-labelledby="trust-heading">
-      <div>
-        <p class="eyebrow">Trust model</p>
-        <h2 id="trust-heading">You decide in Cuehold. Apple executes.</h2>
+    <section class="section reality-section" aria-labelledby="reality-heading">
+      <div class="reality-copy">
+        <div class="section-kicker">ADHD reality</div>
+        <h2 id="reality-heading">Built for the messy middle.</h2>
+        <p>
+          Cuehold treats execution as a recovery loop, not a perfect plan you must obey forever.
+        </p>
       </div>
 
-      <div class="trust-copy">
-        <p>
-          Cuehold does not silently create Reminders or Calendar events. You review before anything
-          is handed off to Apple apps.
-        </p>
-        <p>Optional AI-assisted sorting is consent-gated and explained before use.</p>
+      <div class="reality-list">
+        <article>
+          <h3>Avoidance happens.</h3>
+          <p>The system should help you re-enter, not punish the gap.</p>
+        </article>
+
+        <article>
+          <h3>Passive notes should stay quiet.</h3>
+          <p>Reference material does not need to masquerade as a commitment.</p>
+        </article>
+
+        <article>
+          <h3>Resurfacing should feel helpful, not naggy.</h3>
+          <p>The right next signal matters more than a louder notification.</p>
+        </article>
+
+        <article>
+          <h3>Recovery matters more than perfect planning.</h3>
+          <p>What matters is getting back to a useful next step.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section trust-section" aria-labelledby="trust-heading">
+      <div class="trust-panel">
+        <div>
+          <div class="section-kicker">Trust boundary</div>
+          <h2 id="trust-heading">Apple stays the source of truth. Cuehold stays the decision layer.</h2>
+        </div>
+
+        <div class="trust-grid">
+          <article>
+            <h3>No silent Calendar edits.</h3>
+            <p>Calendar changes stay explicit and reviewed.</p>
+          </article>
+          <article>
+            <h3>No silent Reminder creation.</h3>
+            <p>Reminders are created only after confirmation.</p>
+          </article>
+          <article>
+            <h3>Export is explicit and reviewed.</h3>
+            <p>You decide before Apple apps receive commitments.</p>
+          </article>
+          <article>
+            <h3>Apple Reminders = commitments.</h3>
+            <p>Approved next actions can move there when ready.</p>
+          </article>
+          <article>
+            <h3>Apple Calendar = time map.</h3>
+            <p>Timing belongs on the calendar after review.</p>
+          </article>
+          <article>
+            <h3>Cuehold = triage and judgement.</h3>
+            <p>The messy middle stays visible without becoming noise.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <section class="section beta-cta" aria-labelledby="beta-heading">
-      <p class="eyebrow">Public beta</p>
-      <h2 id="beta-heading">Help shape Cuehold before public release.</h2>
-      <p>We are looking for Apple users who capture too much and want a clearer next step.</p>
-      <a class="button primary" href="beta.html">Join beta waitlist</a>
+      <div class="cta-panel">
+        <div class="section-kicker">Public beta</div>
+        <h2 id="beta-heading">Help shape Cuehold before public release.</h2>
+        <p>We are looking for Apple users who capture too much and want a clearer next step.</p>
+        <a class="button primary" href="beta.html">Join the beta</a>
+      </div>
     </section>
 
     <section class="section faq-section" aria-labelledby="faq-heading">
-      <div class="section-heading compact-heading">
-        <p class="eyebrow">FAQ</p>
-        <h2 id="faq-heading">Small scope, clear rules.</h2>
+      <div class="section-heading split-heading">
+        <div>
+          <div class="section-kicker">FAQ</div>
+          <h2 id="faq-heading">Small scope, clear rules.</h2>
+        </div>
       </div>
 
       <div class="faq-list">
@@ -179,15 +306,20 @@
 
         <article>
           <h3>Does Cuehold use AI?</h3>
-          <p>Some cleanup and sorting features may optionally use AI-assisted processing if you enable them. Cuehold tells you before that happens.</p>
+          <p>Some cleanup and routing features may optionally use AI-assisted processing if you enable them. Cuehold tells you before that happens.</p>
         </article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
+    <a class="logo footer-logo" href="index.html" aria-label="Cuehold home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>Cuehold</span>
+    </a>
     <span>© 2026 Cuehold. All rights reserved.</span>
     <div>
+      <a href="beta.html">Beta</a>
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>
     </div>

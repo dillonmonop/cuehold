@@ -3,20 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Support — Cuehold</title>
+  <title>Support - Cuehold</title>
   <meta name="description" content="Support and beta feedback information for Cuehold." />
-  <meta name="theme-color" content="#0b0d12" />
+  <meta name="theme-color" content="#090b10" />
   <meta property="og:title" content="Cuehold Support" />
   <meta property="og:description" content="Support and beta feedback information for Cuehold." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dillonmonop.github.io/cuehold/support.html" />
+  <meta property="og:image" content="https://dillonmonop.github.io/cuehold/assets/social-preview.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cuehold Support" />
+  <meta name="twitter:description" content="Support and beta feedback information for Cuehold." />
+  <meta name="twitter:image" content="https://dillonmonop.github.io/cuehold/assets/social-preview.svg" />
   <link rel="canonical" href="https://dillonmonop.github.io/cuehold/support.html" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <a class="logo" href="index.html" aria-label="Cuehold home">Cuehold</a>
+    <a class="logo" href="index.html" aria-label="Cuehold home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>Cuehold</span>
+    </a>
 
     <nav class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
@@ -26,9 +37,9 @@
     </nav>
   </header>
 
-  <main>
-    <section class="page-hero">
-      <p class="eyebrow">Support</p>
+  <main id="main">
+    <section class="page-hero section-shell">
+      <div class="section-kicker">Support</div>
       <h1>Help, bugs, and beta feedback.</h1>
       <p>
         Cuehold is an early iPhone beta focused on capture, triage, and deciding
@@ -47,18 +58,18 @@
     </section>
 
     <section class="section compact" id="beta-feedback">
-      <div class="cards two">
-        <article class="card">
+      <div class="bento-grid two-column">
+        <article class="bento-card">
           <h3>For beta testers</h3>
           <p>Use TestFlight feedback when available. Include screenshots or screen recordings if they help explain the issue.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card">
           <h3>What to include</h3>
           <p>Include your iPhone model, iOS version, TestFlight build number, what you captured, what you expected, and what happened instead.</p>
         </article>
 
-        <article class="card">
+        <article class="bento-card">
           <h3>Useful categories</h3>
           <ul class="plain-list">
             <li>Capture issue</li>
@@ -72,7 +83,7 @@
           </ul>
         </article>
 
-        <article class="card">
+        <article class="bento-card accent-card">
           <h3>Out of scope</h3>
           <p>Medical support, emergency help, public App Store billing, and fully automated scheduling are not part of the current beta.</p>
         </article>
@@ -81,6 +92,10 @@
   </main>
 
   <footer class="site-footer">
+    <a class="logo footer-logo" href="index.html" aria-label="Cuehold home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>Cuehold</span>
+    </a>
     <span>© 2026 Cuehold. All rights reserved.</span>
     <div>
       <a href="privacy.html">Privacy</a>
