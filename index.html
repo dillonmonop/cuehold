@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cuehold - Capture the thought. Know what’s next.</title>
+  <title>Cuehold - Capture. Triage. Know what’s next.</title>
   <meta name="description" content="Cuehold is an ADHD-first execution layer for iPhone — turning scattered intent into ranked next action with explicit Apple Reminders and Calendar handoff." />
-  <meta name="theme-color" content="#090b10" />
-  <meta property="og:title" content="Cuehold - Capture the thought. Know what’s next." />
+  <meta name="theme-color" content="#F7F5F0" />
+  <meta property="og:title" content="Cuehold - Capture. Triage. Know what’s next." />
   <meta property="og:description" content="Capture → Triage → What Next for Apple-native workflows." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://dillonmonop.github.io/cuehold/" />
   <meta property="og:image" content="https://dillonmonop.github.io/cuehold/assets/social-preview.svg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Cuehold - Capture the thought. Know what’s next." />
+  <meta name="twitter:title" content="Cuehold - Capture. Triage. Know what’s next." />
   <meta name="twitter:description" content="An ADHD-first execution layer for iPhone." />
   <meta name="twitter:image" content="https://dillonmonop.github.io/cuehold/assets/social-preview.svg" />
   <link rel="canonical" href="https://dillonmonop.github.io/cuehold/" />
@@ -40,9 +40,10 @@
   <main id="main">
     <section class="hero section-shell" aria-labelledby="hero-heading">
       <div class="hero-copy">
-        <h1 id="hero-heading">Capture the thought. Know what’s next.</h1>
+        <h1 id="hero-heading">Capture. Triage. Know what’s next.</h1>
+        <p class="hero-thesis">Capture → Triage → What Next</p>
         <p class="hero-text">
-          Cuehold is an ADHD-first execution layer for iPhone — turning scattered intent into ranked next action.
+          Cuehold is an ADHD-first execution layer for iPhone that turns scattered intent into a reviewed next action.
         </p>
 
         <div class="hero-actions" aria-label="Primary actions">
@@ -63,31 +64,19 @@
               <source srcset="assets/screenshots/today-signal-build12.webp" type="image/webp" />
               <img
                 src="assets/screenshots/today-signal-build12.png"
-                alt="Cuehold Today Signal screen showing capture actions and Up Next."
+                alt="Cuehold Today Signal screen showing capture actions and ranked Up Next items."
                 width="942"
                 height="2048"
+                decoding="async"
                 fetchpriority="high"
               />
             </picture>
-          </div>
-
-          <div class="floating-panel capture-panel" aria-hidden="true">
-            <span>Captured</span>
-            <strong>Invoice thing from yesterday</strong>
-            <small>Ready for triage</small>
-          </div>
-
-          <div class="floating-panel next-panel" aria-hidden="true">
-            <span>What Next</span>
-            <strong>Reply by 4 PM</strong>
-            <small>Ranked above passive notes</small>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section problem-section" aria-labelledby="problem-heading">
-      <div class="section-kicker">The real problem</div>
       <div class="section-heading">
         <h2 id="problem-heading">Your brain is not broken. Your task system is.</h2>
         <p>
@@ -124,7 +113,6 @@
     </section>
 
     <section class="section loop-section" id="how-it-works" aria-labelledby="loop-heading">
-      <div class="section-kicker">Core loop</div>
       <div class="loop-header">
         <h2 id="loop-heading">Capture → Triage → What Next</h2>
         <p>
@@ -157,64 +145,66 @@
     <section class="section showcase-section" aria-labelledby="showcase-heading">
       <div class="section-heading split-heading">
         <div>
-          <div class="section-kicker">Product surface</div>
-          <h2 id="showcase-heading">A calm place between capture and commitment.</h2>
+          <h2 id="showcase-heading">Three product states. One decision loop.</h2>
         </div>
         <p>
-          The interface is intentionally narrow: capture the input, make the call, then decide whether it
-          belongs in Cuehold, Apple Reminders, or Apple Calendar.
+          Screenshots are staged as proof of the loop, not decoration: messy input, explicit triage,
+          and the next signal that deserves attention now.
         </p>
       </div>
 
       <div class="showcase-grid">
         <figure class="shot-card tall-shot">
           <picture>
+            <source srcset="assets/screenshots/capture-flow.webp" type="image/webp" />
+            <img
+              src="assets/screenshots/capture-flow.png"
+              alt="Cuehold capture screen with a quick input field and capture type controls."
+              width="1320"
+              height="2868"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <figcaption>
+            <strong>Capture</strong>
+            <span>Get the thought down before it has to become a plan.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="shot-card">
+          <picture>
+            <source srcset="assets/screenshots/triage-saved-item.webp" type="image/webp" />
+            <img
+              src="assets/screenshots/triage-saved-item.png"
+              alt="Cuehold triage screen asking whether to create an Apple Reminder or keep an item in Cuehold."
+              width="1320"
+              height="2868"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <figcaption>
+            <strong>Triage</strong>
+            <span>Keep the decision explicit before anything becomes a commitment.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="shot-card">
+          <picture>
             <source srcset="assets/screenshots/today-signal-build12.webp" type="image/webp" />
             <img
               src="assets/screenshots/today-signal-build12.png"
-              alt="Cuehold Today Signal screen with capture actions and Up Next."
+              alt="Cuehold Today Signal screen with ranked Up Next items."
               width="942"
               height="2048"
               loading="lazy"
+              decoding="async"
             />
           </picture>
           <figcaption>
-            <strong>Today Signal</strong>
-            <span>The next useful signal rises above passive captures.</span>
-          </figcaption>
-        </figure>
-
-        <figure class="shot-card">
-          <picture>
-            <source srcset="assets/screenshots/library-build12.webp" type="image/webp" />
-            <img
-              src="assets/screenshots/library-build12.png"
-              alt="Cuehold Library screen with filters for Actions, Thoughts, Reference, and Next Actions."
-              width="942"
-              height="2048"
-              loading="lazy"
-            />
-          </picture>
-          <figcaption>
-            <strong>Library</strong>
-            <span>Actions, thoughts, and reference stay distinct.</span>
-          </figcaption>
-        </figure>
-
-        <figure class="shot-card">
-          <picture>
-            <source srcset="assets/screenshots/build-plan-build12.webp" type="image/webp" />
-            <img
-              src="assets/screenshots/build-plan-build12.png"
-              alt="Cuehold Build a Plan screen with plan draft and review controls."
-              width="942"
-              height="2048"
-              loading="lazy"
-            />
-          </picture>
-          <figcaption>
-            <strong>Build a Plan</strong>
-            <span>Plans are reviewed before anything is imported or exported.</span>
+            <strong>What Next</strong>
+            <span>The useful next signal rises above passive captures.</span>
           </figcaption>
         </figure>
       </div>
@@ -222,10 +212,9 @@
 
     <section class="section reality-section" aria-labelledby="reality-heading">
       <div class="reality-copy">
-        <div class="section-kicker">ADHD reality</div>
         <h2 id="reality-heading">Built for the messy middle.</h2>
         <p>
-          Cuehold treats execution as a recovery loop, not a perfect plan you must obey forever.
+          Cuehold treats execution as a recovery loop, not a perfect plan you have to obey forever.
         </p>
       </div>
 
@@ -255,7 +244,6 @@
     <section class="section trust-section" aria-labelledby="trust-heading">
       <div class="trust-panel">
         <div>
-          <div class="section-kicker">Trust boundary</div>
           <h2 id="trust-heading">Apple stays the source of truth. Cuehold stays the decision layer.</h2>
         </div>
 
@@ -290,7 +278,6 @@
 
     <section class="section beta-cta" aria-labelledby="beta-heading">
       <div class="cta-panel">
-        <div class="section-kicker">Public beta</div>
         <h2 id="beta-heading">Help shape Cuehold before public release.</h2>
         <p>We are looking for Apple users who capture too much and want a clearer next step.</p>
         <a class="button primary" href="beta.html">Join the beta</a>
