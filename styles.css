@@ -153,7 +153,7 @@ iframe:focus-visible {
 
 .skip-link {
   position: fixed;
-  top: 12px;
+  top: 10px;
   left: 12px;
   z-index: 20;
   padding: 10px 14px;
@@ -161,12 +161,16 @@ iframe:focus-visible {
   background: var(--cue-indigo);
   border-radius: var(--radius-card);
   font-weight: 800;
-  transform: translateY(-160%);
+  transform: translateY(calc(-100% - 18px));
   transition: transform 180ms var(--ease);
 }
 
-.skip-link:focus {
+.skip-link:focus-visible {
   transform: translateY(0);
+}
+
+.skip-link:focus:not(:focus-visible) {
+  transform: translateY(calc(-100% - 18px));
 }
 
 .site-header,
@@ -1091,28 +1095,40 @@ p {
     --gutter: 16px;
   }
 
+  .motion-ready .reveal-luxe {
+    filter: blur(4px);
+    transform: translateY(20px) scale(0.992);
+  }
+
+  .motion-ready .reveal-luxe .stagger > * {
+    filter: blur(3px);
+    transform: translateY(12px);
+  }
+
   .site-header {
     position: relative;
     align-items: flex-start;
     flex-direction: column;
-    gap: 8px;
-    padding: 10px 0 6px;
+    gap: 6px;
+    padding: 8px 0 4px;
   }
 
   .logo {
-    min-height: 32px;
-    font-size: 0.98rem;
+    min-height: 30px;
+    font-size: 0.92rem;
   }
 
   .logo-mark {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     border-radius: 6px;
   }
 
   .logo-mark::before {
-    top: 5px;
-    left: 5px;
+    top: 4px;
+    left: 4px;
+    width: 9px;
+    height: 9px;
   }
 
   .nav {
@@ -1124,14 +1140,14 @@ p {
     border: 0;
     border-radius: 0;
     backdrop-filter: none;
-    font-size: 0.84rem;
+    font-size: 0.8rem;
     background: transparent;
   }
 
   .nav a {
     flex: 1 1 0;
     min-width: 0;
-    min-height: 32px;
+    min-height: 34px;
     padding: 7px 4px;
     border: 1px solid var(--line);
     text-align: center;
@@ -1140,19 +1156,30 @@ p {
 
   h1,
   .page-hero h1 {
-    font-size: 3.1rem;
-    line-height: 1;
+    font-size: clamp(2.32rem, 9.6vw, 2.9rem);
+    line-height: 0.98;
+    margin-bottom: 18px;
   }
 
   h2 {
-    font-size: 2.35rem;
-    line-height: 1.04;
+    font-size: clamp(1.82rem, 7.2vw, 2.28rem);
+    line-height: 1.02;
+    margin-bottom: 14px;
+  }
+
+  h3 {
+    font-size: 1.08rem;
+    line-height: 1.18;
+  }
+
+  p {
+    line-height: 1.55;
   }
 
   .hero-text {
-    font-size: 1.15rem;
-    line-height: 1.55;
-    max-width: 21rem;
+    max-width: 20rem;
+    font-size: clamp(1rem, 4.1vw, 1.08rem);
+    line-height: 1.48;
   }
 
   .hero-copy {
@@ -1162,20 +1189,96 @@ p {
   }
 
   .hero h1 {
-    max-width: 7.3em;
+    max-width: 8.1em;
+    overflow-wrap: normal;
   }
 
   .hero {
-    padding-top: 28px;
-    gap: 18px;
+    padding: 20px 0 18px;
+    gap: 8px;
+  }
+
+  .hero-thesis {
+    margin-bottom: 14px;
+    font-size: 0.92rem;
+    line-height: 1.35;
+  }
+
+  .hero-actions {
+    gap: 8px;
+    margin-top: 18px;
+  }
+
+  .button {
+    min-height: 44px;
+    padding: 0 16px;
+    font-size: 0.9rem;
+  }
+
+  .status-note {
+    max-width: 20rem;
+    margin-top: 10px;
+    font-size: 0.84rem;
+    line-height: 1.45;
   }
 
   .hero-visual {
-    min-height: 390px;
+    min-height: 266px;
+  }
+
+  .hero-stage {
+    inset: 0;
+  }
+
+  .hero-stage::before {
+    inset: 2% -4% 0;
+    border-radius: 34px;
+  }
+
+  .stage-light {
+    inset: 0 -5% 0;
+    border-radius: 34px;
+  }
+
+  .stage-slab {
+    inset: 13% 3% 5%;
+    border-radius: 30px;
+    transform: perspective(760px) rotateY(-5deg) rotateX(1.5deg) rotateZ(-1deg);
+  }
+
+  .phone-frame {
+    width: min(100%, 188px);
+    padding: 7px;
+    border-radius: 29px;
+  }
+
+  .phone-frame img {
+    max-height: 286px;
+    border-radius: 21px;
   }
 
   .section {
-    padding-top: 72px;
+    padding-top: 56px;
+  }
+
+  .problem-section {
+    padding-top: 48px;
+  }
+
+  .section-kicker {
+    margin-bottom: 10px;
+    font-size: 0.72rem;
+  }
+
+  .section-heading {
+    margin-bottom: 26px;
+  }
+
+  .section-heading p,
+  .loop-header p,
+  .page-hero p {
+    font-size: clamp(1rem, 4vw, 1.08rem);
+    line-height: 1.52;
   }
 
   .section-heading,
@@ -1193,12 +1296,34 @@ p {
     gap: 8px;
   }
 
+  .problem-grid {
+    padding: 20px 0 6px;
+  }
+
+  .problem-grid .bento-card {
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+  }
+
   .loop-track {
     gap: 0;
   }
 
+  .loop-section {
+    padding-top: 62px;
+    padding-bottom: 14px;
+  }
+
+  .loop-section::before {
+    top: 42px;
+  }
+
+  .loop-header {
+    margin-bottom: 24px;
+  }
+
   .loop-track article {
-    padding: 22px 0;
+    padding: 18px 0;
     min-height: 0;
     border-right: 0;
     border-bottom: 1px solid var(--line);
@@ -1210,12 +1335,7 @@ p {
 
   .problem-grid {
     grid-template-columns: 1fr;
-    gap: 22px;
-  }
-
-  .problem-grid .bento-card {
-    padding-top: 22px;
-    border-top: 1px solid var(--line);
+    gap: 16px;
   }
 
   .problem-grid .bento-card:first-child {
@@ -1223,15 +1343,84 @@ p {
     border-top: 0;
   }
 
+  .problem-grid .accent-card h3 {
+    font-size: clamp(1.22rem, 5vw, 1.42rem);
+    line-height: 1.1;
+  }
+
   .bento-card {
     min-height: 0;
+  }
+
+  .card-index,
+  .loop-number {
+    min-width: 32px;
+    height: 24px;
+    margin-bottom: 14px;
+    font-size: 0.72rem;
+  }
+
+  .showcase-grid {
+    gap: 14px;
+  }
+
+  .shot-card {
+    min-height: 0;
+    gap: 14px;
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .shot-card img {
+    width: min(100%, 214px);
+    max-height: 340px;
+    border-radius: 24px;
+  }
+
+  .tall-shot img {
+    width: min(100%, 226px);
+  }
+
+  .shot-card strong {
+    font-size: 1rem;
+  }
+
+  .shot-card span {
+    font-size: 0.94rem;
   }
 
   .trust-panel,
   .cta-panel,
   .page-hero {
-    padding: 28px 20px;
-    border-radius: 18px;
+    padding: 24px 18px;
+    border-radius: 16px;
+  }
+
+  .trust-panel {
+    gap: 24px;
+  }
+
+  .trust-lede {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+
+  .trust-grid article {
+    padding: 14px 0;
+  }
+
+  .trust-grid h3 {
+    margin-bottom: 6px;
+    font-size: 0.98rem;
+  }
+
+  .trust-grid p {
+    font-size: 0.94rem;
+    line-height: 1.46;
+  }
+
+  .cta-panel p {
+    font-size: 1rem;
   }
 
   .site-footer {
@@ -1248,8 +1437,8 @@ p {
 @media (max-width: 520px) {
   h1,
   .page-hero h1 {
-    font-size: 2.38rem;
-    line-height: 1.03;
+    font-size: clamp(2rem, 9.2vw, 2.34rem);
+    line-height: 1;
   }
 
   .hero-copy {
@@ -1258,7 +1447,7 @@ p {
   }
 
   .hero h1 {
-    max-width: 8.6em;
+    max-width: 100%;
   }
 
   .hero-text {
@@ -1266,7 +1455,7 @@ p {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: clamp(1.56rem, 6.9vw, 1.86rem);
   }
 
   .button,
@@ -1275,32 +1464,33 @@ p {
   }
 
   .button {
-    min-height: 48px;
+    min-height: 44px;
   }
 
   .hero-actions {
-    gap: 10px;
-    margin-top: 24px;
+    gap: 8px;
+    margin-top: 18px;
   }
 
   .status-note {
-    margin-top: 14px;
-    font-size: 0.92rem;
+    margin-top: 10px;
+    font-size: 0.84rem;
   }
 
   .phone-frame {
-    width: min(100%, 218px);
-    padding: 8px;
-    border-radius: 30px;
+    width: min(100%, 152px);
+    padding: 7px;
+    border-radius: 28px;
   }
 
   .phone-frame img {
-    max-height: 344px;
-    border-radius: 22px;
+    max-height: none;
+    object-fit: contain;
+    border-radius: 20px;
   }
 
   .hero-visual {
-    min-height: 314px;
+    min-height: 300px;
   }
 
   .hero-visual {
@@ -1316,21 +1506,89 @@ p {
   }
 
   .page-hero p {
-    font-size: 1.02rem;
-    line-height: 1.55;
+    font-size: 1rem;
+    line-height: 1.52;
   }
 
   .section.compact {
     padding-top: 34px;
   }
 
+  .section {
+    padding-top: 48px;
+  }
+
+  .problem-section {
+    padding-top: 42px;
+  }
+
   .bento-card {
     padding: 20px;
   }
 
-  .card-index,
-  .loop-number {
-    margin-bottom: 18px;
+  .shot-card {
+    padding: 16px;
+  }
+
+  .shot-card img {
+    width: min(100%, 190px);
+    max-height: 306px;
+  }
+
+  .tall-shot img {
+    width: min(100%, 202px);
+  }
+
+  .trust-panel,
+  .cta-panel,
+  .page-hero {
+    padding: 22px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    gap: 5px;
+    padding-top: 8px;
+  }
+
+  .nav {
+    gap: 3px;
+    font-size: 0.76rem;
+  }
+
+  .nav a {
+    min-height: 34px;
+    padding: 7px 2px;
+  }
+
+  .hero {
+    padding-top: 16px;
+  }
+
+  .hero-text,
+  .section-heading p,
+  .loop-header p,
+  .page-hero p {
+    font-size: 1rem;
+  }
+
+  .hero h1,
+  h2,
+  .page-hero h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .section-heading {
+    margin-bottom: 22px;
+  }
+
+  .loop-track article {
+    padding: 16px 0;
+  }
+
+  .trust-grid article {
+    padding: 12px 0;
   }
 }
 
