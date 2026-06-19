@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cuehold">
   <rect width="64" height="64" rx="14" fill="#090b10"/>
   <path d="M18 22c0-4.4 3.6-8 8-8h12c4.4 0 8 3.6 8 8v20c0 4.4-3.6 8-8 8H26c-4.4 0-8-3.6-8-8V22Z" fill="url(#g)"/>
-  <path d="M25 25h15M25 32h10M25 39h16" stroke="#07100d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M25 24h14v14H25z" fill="none" stroke="#07100d" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="41" cy="42" r="3" fill="#07100d"/>
   <defs>
     <linearGradient id="g" x1="16" y1="14" x2="50" y2="49" gradientUnits="userSpaceOnUse">
       <stop stop-color="#9ee6c9"/>
